@@ -1,0 +1,88 @@
+.p {
+    margin : 0;
+    color:antiquewhite;
+}
+.featured {
+    height : 310px;
+    position : relative;
+    background-size:cover;
+    background-image: url("https://github.com/anjihhg/billy_htmlcss/blob/master/img/issue-4.jpg?raw=true");
+}
+
+.count {
+    position : absolute;
+    top:30px;
+    right:26px;
+}
+.text-area {
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    color:antiquewhite;
+    
+}
+
+.featured .title {
+      margin-bottom: 12px;
+}
+
+
+.h1 {
+    font-family :'Times New Roman', Times, serif;
+    color : white;
+
+}
+
+sup {
+    font-size : 12px;
+}
+.swiper img {
+    width : 136px;
+    height:80px;
+    
+}
+
+.swiper li {
+    width : 136px;
+    height : 80px;
+    background-size:cover;
+    list-style:none;
+    background-position: center;  //가운데로 맞춤
+    display:inline-block;     //가로로 list를 정렬함
+    white-space:nowrap;       //white-space : normal은 줄바꿈을 하겠다는 건데 이걸 nowrap을 해주면 
+    줄바꿈을 하지 않고 그대로 가로로 이어준다는 것이 된다.
+    overflow-x:scroll;//가로 축에서 스크롤을 해주겠다는 것이다. 
+    border-radius:5px;
+    margin-right:12px;
+
+.swiper {
+    white-space :nowrap;
+    overflow-x:scroll;
+    padding-top:24px;
+    padding-left:24px;
+    padding-right:24px;
+    padding-bottom:24px;
+}
+
+
+
+
+
+
+
+}
+
+ul,li {
+    margin:0;    //위로 붙여줌 
+    padding:0;   //옆으로 붙여줌
+} 
+
+.swiper li :nth-child(1){
+
+}
+.swiper li :nth-child(2){
+    
+}
+.swiper li :nth-child(3){
+    
+}

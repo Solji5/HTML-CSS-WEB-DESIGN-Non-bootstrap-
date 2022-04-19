@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type="text/css" media="screen" href="designproject1.css">
+    <style>
+        body {
+            margin:0;
+            font-family: 'Courier New', "Courier", monospace;
+            color: bisque;
+            font-size: 15px;
+            background-color: darkslategray;
+            line-height: 1.4rem;
+            font-weight : 500;
+            overflow-x : hidden;
+        }
+
+        h1 {
+            color: saddlebrown;
+            font-weight: normal;
+            
+           
+        }
+        .volume { 
+            font-size : 40px;
+        }
+
+        .text-area {
+            margin-top : 90px;
+            margin-left : 24px;
+        }
+        .text-area line {
+            width : 46px;
+            height :1px;
+            display :inline-block;
+            background-color: red;
+            top : -7px;
+            position : relative;
+            opacity: 0.2rem;
+        }
+
+        .volume {
+            margin-bottom : 85px;
+
+        }
+
+        .text-area h1{
+            font-size : 30px;
+            line-height : 30px;     /*줄간격*/
+            font-weight : normal;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom:22px;
+        }
+
+        .title {
+            margin-bottom : 30px;
+        }
+
+        .circle-wrapper {
+            border : 1px solid rgb(9, 2, 2);
+            background-color:darkslategray;
+        }
+
+        .circle {
+            width : 246px;
+            height : 246px;
+            border-radius: 50% ;
+            position:absolute;
+          } 
+
+            /*원을 만들려면 50%로 해주면 된다.*/
+           
+
+        .circle:nth-child(1) {
+            background-color : transparent;
+            border : 1px solid black;
+            opacity : 0.2;
+            box-sizing:border-box;
+        }
+
+        .circle:nth-child(2) {
+            background-color : #ffc000;
+            left : 100px;
+
+        }
+
+        .circle:nth-child(3) {
+            background-color : #fedd15;
+            left:200px;  /*left = 위치가로 속성을 줌. 좌로 200px만큼 떨어지게*/
+            transition : 1s;
+            top:350px;
+            margin-top:80px;
+        }
+
+        .circle:nth-child(3):hover {
+            background-color:blue;
+            top : -10px;
+            
+
+        }
+        .cricle:nth-child(2):active {
+            background-color :red;
+            top:-20px;
+        }
+
+        #badge{
+            background-color: #ffc000;
+            width : 56px;
+            height : 56px;
+            color : #485861;
+            pading-left : 13px; /*이 요소는 왼쪽으로 10을 늘린다. 실질적으로 66px*/
+            padding-top : 18px;
+            margin-left : 24px;
+            box-sizing: border-box;
+            line-height : 11px;
+            font-size :9px;
+            top:0;
+            right :24px;
+            position:fixed;
+
+         /*margin-left는 왼쪽 페이지 끝으로부터 얼마나 띄어져 있을지
+           top은 위로부터 얼마나 떨어져 있는지 right는 오른쪽으로부터 얼마나 떨어져 있는지(위치설정)
+           fixed는 무슨짓을 하든 항상 그 위치에 고정됨 */
+            
+        
+    </style>    
+</head>
+<body>
+    <!--텍스트 아리아-->
+
+    <div class="text-area">
+        
+        <h1> 
+            <div class="volume">vol.4</div>
+            <div class="title">Classics<div class="line"></div><br> never get<br> old</div>
+        </h1>
+        <p>We'll make a mobile magazine<br> using html and cass only</p>
+    </div>
+    <!--원-->
+    <div class="circle-wrapper">      /*id ="circle-wrapper"의 id는 이 문서에서 하나
+        밖에 없는 것을 지정함 id를 지정해서 css를 주고 싶을 때는 .이 아니라 앞에 #id이름을 써야한다.*/
+        <div class="circle">circle1</div>
+        <div class="circle">circle2</div>
+        <div class="circle">circle3</div>
+    </div>
+    
+    <!--하단배지-->
+    <div id ="badge">Ex-<br/>
+        clusive</div>
+    
+</body>
+</html>
+
+
+
+
